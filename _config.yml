@@ -21,7 +21,7 @@ author: OPSN Team
 
 navbar-links:
   About: 
-    - About CONNECT: "about"
+    - About OPSN: "about"
     - Partners: "partners"
     - Hubs & Working Groups: "hubs"
     - News: "news"
@@ -38,14 +38,14 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/connect_logo.png"
+avatar: "/assets/img/opsn-logo.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-#title-img: /path/to/image
+title-img: "/assets/img/opsn-logo.png"
 
 
 #####################################
@@ -56,11 +56,11 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links: 
-  email: "connect-admin@manybabies.org"
+  email: "openpsysci.ng@gmail.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  github: connect-btss
-  bluesky: connect-btss.bsky.social
-  twitter: https://x.com/openpsysci_ng
+#  github: connect-btss
+#  bluesky: connect-btss.bsky.social
+  twitter: openpsysci_ng
 #  patreon: DeanAttali
 #  youtube: "@daattali"
 #  whatsapp: 15551212
@@ -99,7 +99,7 @@ rss-description: Everything you need to know about the CONNECT
 
 # Select which social network share links to show in posts
 share-links-active:
-  twitter: false
+  twitter: True
   facebook: false
   linkedin: false
   vk: false
@@ -107,7 +107,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "connect-btss.github.io"
+url-pretty: "openpsychscience-ng/"
 
 # Add the website title to the title of every page
 title-on-all-pages: true
@@ -142,16 +142,16 @@ navbar-var-length: false
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
 page-col: "#FFFFFF"
-text-col: "#404040"
-link-col: "#0CA6D6"
-hover-col: "#EC4801"
-navbar-col: "#FEC51D"
-navbar-text-col: "#364362"
-navbar-border-col: "#DDDDDD"
-footer-col: "#EAEAEA"
-footer-text-col: "#364362"
-footer-link-col: "#364362"
-footer-hover-col: "#EC4801"
+text-col: "#1E2E1E"
+link-col: "#2A7A3B"
+hover-col: "#1A5228"
+navbar-col: "#2A7A3B"
+navbar-text-col: "#FFFFFF"
+navbar-border-col: "#1A5228"
+footer-col: "#E8F5E9"
+footer-text-col: "#1E3A1E"
+footer-link-col: "#2A7A3B"
+footer-hover-col: "#4CAF50"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
