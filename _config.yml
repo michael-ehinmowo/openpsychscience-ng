@@ -13,7 +13,7 @@
 title: Open Psychological Science Nigeria
 
 # Your name to show in the footer
-author: CONNECT
+author: OPSN Team
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -55,12 +55,12 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
-social-network-links:
+social-network-links: 
   email: "connect-admin@manybabies.org"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
   github: connect-btss
   bluesky: connect-btss.bsky.social
-#  twitter: daattali
+  twitter: https://x.com/openpsysci_ng
 #  patreon: DeanAttali
 #  youtube: "@daattali"
 #  whatsapp: 15551212
