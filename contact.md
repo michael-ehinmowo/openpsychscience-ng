@@ -1,25 +1,21 @@
 ---
 layout: page
-title: contact
+title: Contact
+subtitle: Get in touch, or get involved
 ---
 
-## General contact information
+Email us at **[{{ site.data.global.contact.general }}](mailto:{{ site.data.global.contact.general }})**. You can also find us on social media — links are in the footer.
 
-#### >> General contact: [{{ site.data.global.contact.general }}](mailto:{{ site.data.global.contact.general }}) <<
-* **Project Directors: [Kiley Hamlin](mailto:kiley.hamlin@psych.ubc.ca), [Krista Byers-Heinlein](mailto:k.byers@concordia.ca), & [Melanie Soderstrom](mailto:m.soderstrom@umanitoba.ca)**
-* **Network Coordinator & BiTS Lab Director: [Heidi Baumgartner](mailto:heidib@manybabies.org)**
-* **Project Coordination Assistants: [Brittany Tsang and Kyra Gorsuch](mailto:{{ site.data.global.contact.admin }})**
-* **Project Management Council: [Directors + Coordinators](mailto:{{ site.data.global.contact.pmc }})**
+## Ways to take part
 
-***
+**Come to a Journal Club session.** Open to anyone, no preparation needed. [More about Journal Club]({{ site.baseurl }}/journal-club/).
 
-## Working groups
-CONNECT working groups meet monthly and welcome participation from researchers with a deep interest in or expertise in each topic. To get involved, contact a working group lead *(see [Hubs and Working Groups]({{site.baseurl}}/hubs/))* or the Partnership Coordination Assistants *(see above)*.
+**Join a workshop.** Practical training on the tools of open research.
 
-## Big Team Science (BiTS) Lab
-BiTS lab meetings are open to researchers at any career stage involved in Big Team Social Science. For information about joining, contact the BiTS Lab director *(see above)*.
+**Suggest a resource.** If something has helped you work more openly, it may help someone else.
 
-## ManyManys
-ManyManys projects are open to everyone, not just members of CONNECT partner networks. You can learn more on the [ManyManys website](https://manymanys.github.io/).
+**Help organise.** We're a volunteer community and always short of hands — for running sessions, writing materials, or reaching new institutions.
 
+## Who we're looking for
 
+Students, early-career researchers, clinicians and academics working in psychology and the neighbouring behavioural, social and health sciences. You don't need prior experience with open science — most of our members are learning it alongside their own research.

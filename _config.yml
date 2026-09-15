@@ -20,16 +20,10 @@ author: OPSN Team
 ###############################################
 
 navbar-links:
-  About: 
-    - About OPSN: "about"
-    - Partners: "partners"
-    - Hubs & Working Groups: "hubs"
-    - News: "news"
-  Resources:
-    - Events: "events"
-    - Calendar: "calendar"
-    - Publications: "publications"
-    - Resource list: "resources"
+  About: "about"
+  Journal Club: "journal-club"
+  Resources: "resources"
+  News: "news"
   Contact: "contact"
 
 ################
@@ -91,7 +85,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: Everything you need to know about the CONNECT
+rss-description: News and updates from Open Psychological Science Nigeria (OPSN)
 
 ###########################
 # --- General options --- #
@@ -107,7 +101,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "openpsychscience-ng/"
+url-pretty: "Open Psychological Science Nigeria"
 
 # Add the website title to the title of every page
 title-on-all-pages: true
@@ -133,7 +127,7 @@ edit_page_button: true
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+keywords: "open science, reproducibility, psychology, Nigeria, Africa, preregistration, open data, research transparency"
 
 ######################################
 # --- Colours / background image --- #
@@ -142,16 +136,16 @@ navbar-var-length: false
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
 page-col: "#FFFFFF"
-text-col: "#1E2E1E"
-link-col: "#2A7A3B"
-hover-col: "#1A5228"
-navbar-col: "#2A7A3B"
+text-col: "#1F2D24"
+link-col: "#00703C"
+hover-col: "#14532D"
+navbar-col: "#14532D"
 navbar-text-col: "#FFFFFF"
-navbar-border-col: "#1A5228"
-footer-col: "#E8F5E9"
-footer-text-col: "#1E3A1E"
-footer-link-col: "#2A7A3B"
-footer-hover-col: "#4CAF50"
+navbar-border-col: "#0E3D21"
+footer-col: "#EAF3EC"
+footer-text-col: "#1F2D24"
+footer-link-col: "#00703C"
+footer-hover-col: "#14532D"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
@@ -161,7 +155,7 @@ footer-hover-col: "#4CAF50"
 #page-img: "/assets/img/bgimage.png"
 
 # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
-#mobile-theme-col: "#0085A1"
+mobile-theme-col: "#14532D"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
 #site-css:
@@ -265,7 +259,7 @@ date_format: "%B %-d, %Y"
 #################################################################################
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Toronto"
+timezone: "Africa/Lagos"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
@@ -282,6 +276,8 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      head-extra:
+        - opsn-head.html
       comments: true  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
   -
@@ -289,12 +285,18 @@ defaults:
       path: "" # any file that's not a post will be a "page" layout by default
     values:
       layout: "page"
-      footer-extra: datause.html # include data use policy in footer all pages
+      head-extra:
+        - opsn-head.html
+      footer-extra:
+        - datause.html # data use policy in the footer of every page
       
 
 # Exclude these files from production site
 exclude:
   - CHANGELOG.md
+  - .Rhistory
+  - "*.Rproj"
+  - beautiful-jekyll-theme.gemspec
   - CNAME
   - Gemfile
   - Gemfile.lock

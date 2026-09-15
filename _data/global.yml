@@ -1,34 +1,6 @@
-# global variables for MB site
+# global variables for the OPSN site
 
-### EXAMPLES
-# author:
-#   name: Jane Doe
-#   twitter: janedoe
-# contact_email: jane@example.com
+# use them elsewhere like this: {{ site.data.global.contact.general }}
 
-# use them elsewhere like this: {{ site.data.global.author.name }}
-
-  
 contact:
-  general: connect-contact@manybabies.org
-  admin: connect-admin@manybabies.org
-  pmc: connect-pmc@manybabies.org
-  heidi: heidib@manybabies.org
-  
-listserv:
-  connect-all: connect-partners@manybabies.org
-  
-link:
-  manybabies: https://manybabies.org/
-  manybirds: https://themanybirds.com/
-  manydogs: https://manydogsproject.github.io/
-  manyfishes: https://themanyfishes.github.io/
-  manymanys: https://manymanys.github.io/
-  manyprimates: https://manyprimates.github.io/
-  psa: https://psysciacc.org/
-  sdc: https://www.strengtheningdemocracychallenge.org/
-  abrir: https://abrirpsy.org/
-  carn: https://carn-recar.ca/
-  chs: https://childrenhelpingscience.com/
-  cos: https://www.cos.io/
-  
+  general: openpsysci.ng@gmail.com

@@ -1,0 +1,326 @@
+/* ==========================================================================
+   OPSN — Open Psychological Science Nigeria
+   Theme layer. Loaded after beautifuljekyll.css, so it wins on conflicts.
+
+   Palette
+     --opsn-forest  #14532D  navbar, section bands, headings
+     --opsn-green   #00703C  links and accents (Nigerian flag green, darkened
+                             to reach AA contrast on white)
+     --opsn-ink     #1F2D24  body text, a green-cast dark rather than grey
+     --opsn-paper   #FFFFFF  page
+     --opsn-mint    #EAF3EC  footer and quiet bands
+     --opsn-rule    #C9DDCF  hairlines
+
+   Type
+     Playfair Display  display serif, high contrast — headings only
+     Source Serif 4    text serif, screen-optimised — body and UI
+   ========================================================================== */
+
+:root {
+  --opsn-forest: #14532D;
+  --opsn-green: #00703C;
+  --opsn-ink: #1F2D24;
+  --opsn-paper: #FFFFFF;
+  --opsn-mint: #EAF3EC;
+  --opsn-rule: #C9DDCF;
+  --opsn-quiet: #55665C;
+
+  --body-font: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --header-font: 'Playfair Display', Georgia, serif;
+
+  --measure: 34rem;
+}
+
+/* --- Base type ----------------------------------------------------------- */
+
+body {
+  font-family: var(--body-font);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--opsn-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--header-font);
+  color: var(--opsn-forest);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 1.75rem; margin-top: 2.75rem; }
+h3 { font-size: 1.25rem; margin-top: 2rem; }
+
+main p, main li {
+  max-width: var(--measure);
+}
+
+main a {
+  color: var(--opsn-green);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 1px;
+}
+main a:hover,
+main a:focus {
+  color: var(--opsn-forest);
+  text-decoration-thickness: 2px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--opsn-green);
+  outline-offset: 3px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--opsn-rule);
+  margin: 2.5rem 0;
+}
+
+blockquote {
+  border-left: 2px solid var(--opsn-rule);
+  color: var(--opsn-quiet);
+  font-style: normal;
+  padding-left: 1.25rem;
+  margin-left: 0;
+}
+
+/* --- Navigation ---------------------------------------------------------- */
+
+.navbar-custom {
+  background-color: var(--opsn-forest);
+  border-bottom: 1px solid #0E3D21;
+}
+.navbar-custom .navbar-brand {
+  font-family: var(--header-font);
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.01em;
+  color: #fff;
+}
+.navbar-custom .nav-link {
+  font-family: var(--body-font);
+  font-weight: 400;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.82);
+}
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link:focus {
+  color: #fff;
+}
+.navbar-custom .dropdown-menu {
+  border: 1px solid var(--opsn-rule);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* --- Inner page headers -------------------------------------------------- */
+
+.intro-header {
+  background: var(--opsn-paper);
+  border-bottom: 1px solid var(--opsn-rule);
+  padding: 3.5rem 0 2rem;
+  margin-bottom: 2.5rem;
+}
+.intro-header .page-heading h1,
+.intro-header .post-heading h1 {
+  font-size: 2.5rem;
+  color: var(--opsn-forest);
+}
+.intro-header .page-subheading,
+.intro-header .post-subheading {
+  font-family: var(--body-font);
+  font-style: normal;
+  color: var(--opsn-quiet);
+}
+
+/* --- Landing page -------------------------------------------------------- */
+
+.landing {
+  padding: 0;
+}
+
+.band {
+  padding: 4.5rem 0;
+}
+.band > .band-inner {
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.band-mint {
+  background: var(--opsn-mint);
+}
+.band-forest {
+  background: var(--opsn-forest);
+  color: #E4EFE7;
+}
+.band-forest h2 {
+  color: #fff;
+}
+.band-forest a {
+  color: #fff;
+}
+
+.band-rule {
+  border-top: 1px solid var(--opsn-rule);
+}
+
+/* Hero: the headline is the one loud element on the site. */
+
+.hero {
+  padding: 6rem 0 3.5rem;
+}
+.hero h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.05;
+  max-width: 18ch;
+  margin: 0 0 1.5rem;
+}
+.hero p.lede {
+  font-size: 1.25rem;
+  line-height: 1.55;
+  color: var(--opsn-ink);
+  max-width: 38rem;
+  margin: 0 0 2.25rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.btn-opsn,
+.btn-opsn-quiet {
+  display: inline-block;
+  font-family: var(--body-font);
+  font-size: 1rem;
+  padding: 0.7rem 1.4rem;
+  border: 1px solid var(--opsn-forest);
+  text-decoration: none;
+}
+.btn-opsn {
+  background: var(--opsn-forest);
+  color: #fff;
+}
+.btn-opsn:hover,
+.btn-opsn:focus {
+  background: var(--opsn-green);
+  border-color: var(--opsn-green);
+  color: #fff;
+  text-decoration: none;
+}
+.btn-opsn-quiet {
+  background: transparent;
+  color: var(--opsn-forest);
+}
+.btn-opsn-quiet:hover,
+.btn-opsn-quiet:focus {
+  background: var(--opsn-mint);
+  color: var(--opsn-forest);
+  text-decoration: none;
+}
+
+/* The four practices. A set, not a sequence — so rules, not numbers. */
+
+.practices {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--opsn-rule);
+  margin-top: 4rem;
+}
+.practices div {
+  padding: 1.25rem 1.25rem 0 0;
+  border-right: 1px solid var(--opsn-rule);
+}
+.practices div:last-child {
+  border-right: 0;
+}
+.practices dt {
+  font-family: var(--header-font);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--opsn-forest);
+  margin: 0 0 0.35rem;
+}
+.practices dd {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--opsn-quiet);
+  margin: 0;
+}
+
+/* Activity list: hairline-separated rows, not a card grid. */
+
+.activities {
+  margin-top: 2rem;
+}
+.activities > div {
+  border-top: 1px solid var(--opsn-rule);
+  padding: 1.75rem 0;
+  display: grid;
+  grid-template-columns: 14rem 1fr;
+  gap: 2rem;
+}
+.activities > div:last-child {
+  border-bottom: 1px solid var(--opsn-rule);
+}
+.activities h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+.activities p {
+  margin: 0;
+  max-width: 40rem;
+}
+
+/* --- Footer -------------------------------------------------------------- */
+
+footer {
+  background: var(--opsn-mint);
+  border-top: 1px solid var(--opsn-rule);
+  color: var(--opsn-ink);
+  font-size: 0.9375rem;
+}
+footer a {
+  color: var(--opsn-green);
+}
+footer .copyright,
+footer .theme-by {
+  color: var(--opsn-quiet) !important;
+}
+
+/* --- Responsive ---------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3.5rem 0 2.5rem;
+  }
+  .band {
+    padding: 3rem 0;
+  }
+  .practices {
+    grid-template-columns: 1fr 1fr;
+  }
+  .practices div:nth-child(2n) {
+    border-right: 0;
+  }
+  .practices div:nth-child(n + 3) {
+    border-top: 1px solid var(--opsn-rule);
+  }
+  .activities > div {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
