@@ -293,6 +293,7 @@ defaults:
 
 # Exclude these files from production site
 exclude:
+  - vendor
   - CHANGELOG.md
   - .Rhistory
   - "*.Rproj"
